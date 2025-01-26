@@ -2,7 +2,7 @@ import { afterAll, beforeAll, describe, expect, test } from '@jest/globals';
 import fs from 'fs';
 import path from 'path';
 
-import { build, init } from '../src';
+import { build, init } from '../src/cffc';
 
 const TEST_DIR = path.join(__dirname, 'test-build');
 

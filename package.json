@@ -1,6 +1,6 @@
 {
   "name": "cffc",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "Custom TypeScript compiler with Cloudfront Function",
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
@@ -19,13 +19,14 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2"
   },
-  "main": "dist/index.js",
+  "main": "./dist/cffc.js",
   "bin": {
-    "cffc": "./dist/index.js"
+    "cffc": "./bin/cffc"
   },
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc",
+    "start": "node dist/cffc.js",
     "test": "jest",
     "prettier:check": "npx prettier \"./**/*.{mjs,js,jsx,ts,tsx}\" --check"
   },
