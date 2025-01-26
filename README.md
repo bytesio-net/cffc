@@ -1,4 +1,4 @@
-# CloudFront Functions Compiler (cffc) ⚡
+# CloudFront Functions Compiler (cffc)
 
 **cffc** is a specialized TypeScript compiler extension that enables seamless development of CloudFront Functions using Typescript.
 
@@ -24,9 +24,13 @@ npm install --save-dev cffc
 
 ## Usage 
 ```bash
-cffc --noExport
+cffc -p tsconfig.cfFn.json
 ```
 
+Flag | Description |
+| - | - |
+| `-p` | 	Path to tsconfig.json (default: tsconfig.json) |
+| `--export` | Disables export removal and keeps standard module behavior (ESM/CJS intact) |
 
 ## Idea
 This tool extends the TypeScript compiler (tsc) to convert modern TypeScript code into CloudFront-compatible JavaScript. It works in two main steps:

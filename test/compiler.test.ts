@@ -14,7 +14,7 @@ function readOutputFile(filename: string): string {
   }
 }
 
-describe('Build Script with --noExport', () => {
+describe('Build Script with noExport', () => {
   let originalArgv: string[];
 
   beforeAll(() => {
@@ -77,7 +77,7 @@ describe('Build Script with --noExport', () => {
     fs.writeFileSync(tsConfigPath, JSON.stringify(tsConfig, null, 2));
 
     // Mock CLI arguments
-    process.argv = ['node', 'compiler.ts', '-p', tsConfigPath, '--noExport'];
+    process.argv = ['node', 'compiler.ts', '-p', tsConfigPath];
 
     // Initialize and run build
     try {
