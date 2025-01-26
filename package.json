@@ -1,6 +1,6 @@
 {
   "name": "cffc",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Custom TypeScript compiler with Cloudfront Function",
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
