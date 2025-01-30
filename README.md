@@ -8,7 +8,7 @@ Amazon CloudFront Functions have strict requirements **cffc** extends the offici
 ## Features ✨
 
 - 🛠 **TSC Extensions** - Full TypeScript support with CloudFront-specific transforms
-- 🚫 **--noExport Flag** - Remove all export declarations
+- 🚫 **noExport** - Remove all export declarations
 - 🔄 **Import Conversion** - Transform ES imports to CommonJS `require()`
 - 🧼 **Module Cleanup** - Remove `__esModule` markers and `module.exports`
 
